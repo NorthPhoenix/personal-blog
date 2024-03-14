@@ -1,0 +1,24 @@
+{
+  "commit": "28c6ca705f7dd7eda6afea54317151c379e96847",
+  "generated": "Wed, 21 Feb 2024 22:12:01 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "4dc47d727be8e86b127baa0a4f4c7ae648a0391c",
+        "hash": "1616862499",
+        "path": "outstatic/content/blog/test-blog-entree.md"
+      },
+      "author": {
+        "name": "Nikita Istomin",
+        "picture": "https://avatars.githubusercontent.com/u/23215805?v=4"
+      },
+      "collection": "blog",
+      "coverImage": "/images/nier-c2Nz.png",
+      "description": "Test description",
+      "publishedAt": "2024-02-09T23:25:59.609Z",
+      "slug": "test-blog-entree",
+      "status": "published",
+      "title": "Test Blog Entree"
+    }
+  ]
+}

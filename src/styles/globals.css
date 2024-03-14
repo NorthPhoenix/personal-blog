@@ -1,0 +1,5 @@
+/*
+This is a pure css file and does not contain tailwind directives due to the existance of separate root layout files in the app folder.
+This file is used to define global styles and utility classes that are not specific to any component or layout.
+It should be imported in every root layout file.
+*/
