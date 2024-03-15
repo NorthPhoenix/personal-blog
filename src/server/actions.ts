@@ -116,7 +116,7 @@ export async function login(redirect_uri?: string) {
     maxAge: 60 * 10,
     sameSite: "lax",
   })
-  revalidatePath("/", "layout")
+  // revalidatePath("/", "layout")
   return redirect(url.toString())
 }
 
@@ -136,7 +136,7 @@ export async function logout(): Promise<LogoutActionResult> {
     sessionCookie.value,
     sessionCookie.attributes,
   )
-  revalidatePath("/", "layout")
+  // revalidatePath("/", "layout")
   return {
     error: null,
   }
