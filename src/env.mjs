@@ -11,14 +11,10 @@ export const env = createEnv({
     OST_GITHUB_SECRET: z.string().min(1),
     OST_TOKEN_SECRET: z.string().min(1),
     OST_REPO_SLUG: z.string().min(1),
-    RESEND_API_KEY: z.string().min(1),
     DB_URL: z.string().min(1),
     DB_AUTH_TOKEN: z.string().min(1),
     AUTH_GITHUB_CLIENT_SECRET: z.string().min(1),
     AUTH_GITHUB_CLIENT_ID: z.string().min(1),
-    AWS_PALWORLD_EC2_ACCESS_KEY: z.string().min(1),
-    AWS_PALWORLD_EC2_SECRET: z.string().min(1),
-    AWS_EC2_INSTANCE_ID: z.string().min(1),
   },
   /*
    * Environment variables available on the client (and server).
@@ -38,13 +34,9 @@ export const env = createEnv({
     OST_GITHUB_SECRET: process.env.OST_GITHUB_SECRET,
     OST_TOKEN_SECRET: process.env.OST_TOKEN_SECRET,
     OST_REPO_SLUG: process.env.OST_REPO_SLUG,
-    RESEND_API_KEY: process.env.RESEND_API_KEY,
     DB_URL: process.env.DB_URL,
     DB_AUTH_TOKEN: process.env.DB_AUTH_TOKEN,
     AUTH_GITHUB_CLIENT_SECRET: process.env.AUTH_GITHUB_CLIENT_SECRET,
     AUTH_GITHUB_CLIENT_ID: process.env.AUTH_GITHUB_CLIENT_ID,
-    AWS_PALWORLD_EC2_ACCESS_KEY: process.env.AWS_PALWORLD_EC2_ACCESS_KEY,
-    AWS_PALWORLD_EC2_SECRET: process.env.AWS_PALWORLD_EC2_SECRET,
-    AWS_EC2_INSTANCE_ID: process.env.AWS_EC2_INSTANCE_ID,
   },
 });
