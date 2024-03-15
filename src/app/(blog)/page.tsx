@@ -2,8 +2,8 @@ import { load } from "outstatic/server"
 import type { OstDocument } from "outstatic"
 import Link from "next/link"
 import Image from "next/image"
-import BlogViewCount from "~/app/_components/blog/BlogViewCount"
-import BlogLikeCount from "~/app/_components/blog/BlogLikeCount"
+// import BlogViewCount from "~/app/_components/blog/BlogViewCount"
+// import BlogLikeCount from "~/app/_components/blog/BlogLikeCount"
 
 export default async function Page() {
   const { allPosts } = await getData()
@@ -60,14 +60,14 @@ const ContentGrid = ({ items, priority = false }: ContentGridProps) => {
             className="scale-100 animate-fade-right cursor-pointer overflow-hidden rounded-md border border-nier-700 transition duration-100 !animate-duration-700 hover:scale-[1.02] hover:shadow active:scale-[0.97] motion-safe:transform-gpu motion-reduce:hover:scale-100 md:w-full"
           >
             <div className="relative select-none sm:mx-0">
-              <BlogViewCount
+              {/* <BlogViewCount
                 slug={item.slug}
                 className="absolute left-0 top-0 px-3 py-2"
               />
               <BlogLikeCount
                 slug={item.slug}
                 className="absolute right-0 top-0 px-3 py-2"
-              />
+              /> */}
               <Image
                 src={item.coverImage ?? ""}
                 alt={`Cover Image for ${item.title}`}

@@ -1,16 +1,18 @@
 import "~/styles/globals.css"
-import "~/styles/portfolio.css"
-import JotaiProvider from "~/app/_components/JotaiProvider"
-import GlobalStateProvider from "~/app/_components/GlobalStateProvider"
+import "~/styles/blog.css"
 // import { Analytics } from "@vercel/analytics/react"
 // import { SpeedInsights } from "@vercel/speed-insights/next"
 import Footer from "~/app/_components/blog//Footer"
 import Header from "~/app/_components/blog/Header"
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
-
+import ReactQueryProvider from "../_components/ReactQueryProvider"
+import { type Metadata } from "next"
 
 // load fonts
 import localFont from "next/font/local"
+import JotaiProvider from "../_components/JotaiProvider"
+import GlobalStateProvider from "../_components/GlobalStateProvider"
+import ScreenBreakpointController from "../_components/ScreenBreakpointController"
 
 const exodus_regular = localFont({
   src: "../../../public/fonts/ExodusDemo-Regular.otf",
@@ -32,10 +34,6 @@ const exodus_striped = localFont({
   display: "swap",
   variable: "--font-exodus-striped",
 })
-
-import { type Metadata } from "next"
-import ReactQueryProvider from "../_components/ReactQueryProvider"
-import ScreenBreakpointController from "../_components/ScreenBreakpointController"
 
 export const metadata: Metadata = {
   title: {

@@ -2,7 +2,7 @@ import Link from "next/link"
 import React from "react"
 import { ArrowLeft } from "lucide-react"
 import BlogViewTracker from "~/app/_components/blog/BlogViewTracker"
-import LikeButton from "~/app/_components/blog/LikeButton"
+// import LikeButton from "~/app/_components/blog/LikeButton"
 
 type LayoutProps = {
   children: React.ReactNode
@@ -28,10 +28,10 @@ const Layout: React.FC<LayoutProps> = ({ children, params }) => {
         </Link>
       </div>
       {children}
-      <hr className="mb-4 border-nier-400" />
+      {/* <hr className="mb-4 border-nier-400" />
       <div className="flex w-full flex-row items-center justify-center">
         <LikeButton slug={params.slug} />
-      </div>
+      </div> */}
     </>
   )
 }
