@@ -31,11 +31,11 @@ const Header: React.FC<HeaderProps> = ({ className = "" }) => {
                 </h2>
               </div>
             </Link>
-            <Suspense
+            {/* <Suspense
               fallback={<Skeleton className="h-10 w-10 rounded-full" />}
             >
               <AuthIndicator />
-            </Suspense>
+            </Suspense> */}
           </nav>
           <div className="flex w-[90%] animate-nav-line-expand flex-row items-center justify-center gap-2 overflow-hidden">
             <span className="h-[2px] w-[15px] grow-0 bg-nier-400" />
