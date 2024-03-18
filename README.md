@@ -1,6 +1,15 @@
 # Personal Blog
 
-Tried rebuilding my Outstatic blog with Next.js Partial Prerendering
+Tried rebuilding my Outstatic blog with Next.js Partial Prerendering.
+
+Outstatic content is only available during build time, therefore the part of the app that needs to access Outstatic content must be statically prerendered.
+
+As of 3/17/2024, I have not found a way to do this with Outstatic.
+
+Reasons:
+
+- Client-side routing triggers server-side render which is not possible with Outstatic.
+- `cookies()` function in the dynamic part of the page triggers re-render of the static content.
 
 ## Tech Stack
 
