@@ -24,23 +24,32 @@ import {
   DrawerTrigger,
 } from "~/app/_components/ui/drawer"
 import { login } from "~/server/actions"
+import { useRouter } from "next/navigation"
 
 const SignInButton: React.FC<ComponentPropsWithoutRef<typeof Button>> = ({
   children,
   ...props
 }) => {
   const [isLoading, setIsLoading] = useState(false)
+  const router = useRouter()
   return (
     <AddaptiveSignInDialog trigger={<Button {...props}>{children}</Button>}>
       <Button
         className="w-full"
         onClick={() => {
           setIsLoading(true)
-          void login()
+          login()
+            .then(() => {
+              router.refresh()
+            })
+            .catch(() => {
+              setIsLoading(false)
+              console.error("Failed to sign in")
+            })
         }}
       >
         {isLoading ?
-          <span className="loading translate-y-1" />
+          <span className="loading" />
         : <div className="flex flex-row flex-wrap items-center justify-start gap-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"

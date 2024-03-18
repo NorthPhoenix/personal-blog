@@ -1,6 +1,6 @@
 # Personal Blog
 
-This is my personal blog website, where I write about my experiences, thoughts on software development and technologies.
+Tried rebuilding my Outstatic blog with Next.js Partial Prerendering
 
 ## Tech Stack
 
