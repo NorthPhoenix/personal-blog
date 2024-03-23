@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children, params }) => {
     <>
       <BlogViewTracker slug={params.slug} />
       <div className="mx-auto mt-2 max-w-6xl pl-2 md:mb-2 md:mt-4">
-        <Link
+        <a
           href="/"
           className=" group flex w-fit flex-row items-center gap-2 p-2"
         >
@@ -25,7 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children, params }) => {
               <div className="h-full w-full -translate-x-full bg-gradient-to-r from-nier-400 via-nier-400 via-20% to-transparent transition-transform duration-300 ease-out group-hover:translate-x-0 group-hover:duration-500"></div>
             </div>
           </div>
-        </Link>
+        </a>
       </div>
       {children}
       {/* <hr className="mb-4 border-nier-400" />

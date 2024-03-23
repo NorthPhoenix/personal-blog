@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ className = "" }) => {
           className={twMerge("flex w-full flex-col items-center", className)}
         >
           <nav className="flex h-16 w-[90%] max-w-7xl  flex-row items-center justify-between bg-transparent p-3 ease-in-out animate-delay-1000 sm:h-20 sm:p-4 md:h-24 md:p-6">
-            <Link
+            <a
               href="/"
               className="group flex flex-row items-center gap-4 object-scale-down md:h-14"
             >
@@ -30,7 +30,7 @@ const Header: React.FC<HeaderProps> = ({ className = "" }) => {
                   Full-stack Developer
                 </h2>
               </div>
-            </Link>
+            </a>
             {/* <Suspense
               fallback={<Skeleton className="h-10 w-10 rounded-full" />}
             >

@@ -53,7 +53,7 @@ const ContentGrid = ({ items, priority = false }: ContentGridProps) => {
     <section>
       <div className="stagger-delta-100 animate-delay-stagger mb-8 grid grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8">
         {items.map((item, id) => (
-          <Link
+          <a
             key={item.slug}
             href={`/${item.slug}`}
             style={{ "--animation-order": id } as React.CSSProperties} // for staggered animation
@@ -85,7 +85,7 @@ const ContentGrid = ({ items, priority = false }: ContentGridProps) => {
               <div className="text-md mb-4 text-slate-700"></div>
               <p className="mb-4 text-lg leading-relaxed">{item.description}</p>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </section>
