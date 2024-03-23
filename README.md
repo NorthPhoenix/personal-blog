@@ -8,7 +8,7 @@ As of 3/17/2024, I have not found a way to do this with Outstatic.
 
 Reasons:
 
-- Client-side routing triggers server-side render which is not possible with Outstatic.
+- Client-side routing triggers server-side render which is not possible with Outstatic. (3/22/2024 update: use anchor HTML tags instead of Link Next.js component to avoid client-side routing.)
 - `cookies()` function in the dynamic part of the page triggers re-render of the static content.
 
 ## Tech Stack
